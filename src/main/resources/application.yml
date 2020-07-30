@@ -1,0 +1,24 @@
+server:
+  port: 9090
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+  cloud:
+    stream:
+      default-binder: rabbit
+      bindings:
+        mqSink:
+          destination: springcloudstream
+        mqSource:
+          destination: springcloudstream
+
+
+
+barry:
+  exchange: barry-exchange
+  queue: barry-queue
+  routing-key: barry-routing-key
