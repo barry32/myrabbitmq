@@ -1,1 +1,1 @@
-# myrabbitmq
+包含rabbitmq 入门学习以及在springboot中的应用，spring cloud stream
